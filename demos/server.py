@@ -4,7 +4,7 @@ from asyncio import run, create_task, CancelledError
 import zmq
 from zmq.asyncio import Context, Socket
 from pymunk.vec2d import Vec2d
-from dataclasses import PlayerEvent, PlayerState, GameState
+from lib import PlayerEvent, PlayerState, GameState
 from server_app import App
 from movement import KeysPressed, apply_movement
 

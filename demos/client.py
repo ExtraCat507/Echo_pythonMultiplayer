@@ -4,15 +4,14 @@ import asyncio
 import threading
 import time
 from collections import deque
-from dataclasses import asdict
-from typing import Dict
+from lib import asdict
 import zmq
 from zmq.asyncio import Context, Socket
 import arcade
 from pymunk.vec2d import Vec2d
 
 from movement import KeysPressed, MOVE_MAP, apply_movement
-from dataclasses import PlayerEvent, PlayerState, GameState
+from lib import PlayerEvent, PlayerState, GameState
 
 logger = logging.getLogger(__name__)
 logger.setLevel('INFO')
